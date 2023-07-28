@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +10,22 @@ namespace SmartPro_6
     {
         static void Main(string[] args)
         {
+            double number;
 
+            Console.Write("Sayı giriniz: ");
+            number = double.Parse(Console.ReadLine());
+
+            if (number % 2 == 0)
+            {
+                Console.Clear();
+                Console.WriteLine("Girdiğiniz sayı çift sayıdır.");
+            }
+            else
+            {
+                Console.Clear();
+                Console.WriteLine("Girdiğiniz sayı tek sayıdır.");
+            }
+            Console.ReadKey();
         }
     }
 }
